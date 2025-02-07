@@ -2,7 +2,9 @@
 
 int main() {
     float radi;
+    float pie;
+    pie = 3.14;
     scanf("%f", &radi);
-    printf("Area: %.2f", radi*3.14);
+    printf("Area: %.2f", radi*pie);
     return 0;
 }

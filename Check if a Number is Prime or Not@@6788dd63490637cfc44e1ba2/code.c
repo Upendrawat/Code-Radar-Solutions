@@ -11,7 +11,7 @@ int main(){
             break;
         }
         else{
-            printf("false")
+            printf("false");
         }
     }
     if(a==1){

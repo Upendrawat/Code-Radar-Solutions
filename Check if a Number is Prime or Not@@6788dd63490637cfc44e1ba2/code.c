@@ -10,9 +10,6 @@ int main(){
             a=1;
             break;
         }
-        else{
-            printf("false");
-        }
     }
     if(a==1){
         printf("Prime");

@@ -6,7 +6,11 @@ int main(){
     if(num2-num1>0){
         printf("Profit");
     }
+    else if(num2-num1==0){
+        printf("No Profit No Loss");
+    }
     else{
         printf("Loss");
     }
+    return 0;
 }

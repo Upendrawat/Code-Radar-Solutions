@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int side1, side2, side3;
-    scanf("%d %d %d", &side1, &side2, &side3);
-    if(side1==side2==side3){
+    int s1, s2, s3;
+    scanf("%d %d %d", &s1, &s2, &s3);
+    if(s1==s2==s3){
         printf("Equilateral");
     }
-    else if((side1==side2) && (side2==side3) && (side1==side3)){
+    else if((s1==s2) && (s2==s3) && (s1==s3)){
         printf("Isoceles");
     }
     else{

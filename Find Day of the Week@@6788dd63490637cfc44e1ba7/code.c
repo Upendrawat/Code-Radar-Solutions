@@ -24,5 +24,6 @@ int main(){
         break;
         default:
         printf("Sunday");
+        break;
     }
 }

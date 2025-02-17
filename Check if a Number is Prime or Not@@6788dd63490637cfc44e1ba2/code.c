@@ -3,13 +3,21 @@
 int main(){
     int num;
     int n;
+    int a=0;
     scanf("%d", &num);
     for(n=2;n<num;n++){
         if(num%n==0){
-            printf("Not Prime");
+            a=1;
+            break;
         }
         else{
-            printf("Prime");
+            printf("false")
         }
+    }
+    if(a==1){
+        printf("Prime");
+    }
+    else{
+        printf("notprime")
     }
 }

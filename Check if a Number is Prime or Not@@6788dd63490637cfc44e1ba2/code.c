@@ -18,6 +18,6 @@ int main(){
         printf("Prime");
     }
     else{
-        printf("notprime")
+        printf("notprime");
     }
 }

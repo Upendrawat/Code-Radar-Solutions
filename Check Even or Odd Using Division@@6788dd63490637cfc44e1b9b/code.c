@@ -11,9 +11,10 @@ int  main(){
     // }
 
     if ((num / 2) * 2 == num) {
-        printf("%d is Even\n", num);
-    } else {
-        printf("%d is Odd\n", num);
+        printf("Even");
+    } 
+    else {
+        printf("Odd");
     }
     return 0;
 }

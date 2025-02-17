@@ -3,7 +3,7 @@
 int main(){
     int num;
     scanf("%d", &num);
-    Swtich(num>=1){
+    Swtich(num>=1 && num<=7){
         case 1:
         printf("Monday");
         case 2:

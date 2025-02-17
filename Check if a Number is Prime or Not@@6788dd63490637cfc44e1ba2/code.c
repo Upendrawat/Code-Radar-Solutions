@@ -5,6 +5,11 @@ int main(){
     int n;
     scanf("%d", &num);
     for(n=2;n<num;n++){
-        if
+        if(num%n==0){
+            printf("Not Prime");
+        }
+        else{
+            printf("Prime");
+        }
     }
 }

@@ -7,6 +7,9 @@ int isPrime(int num){
         if(num%i==0){
             isPrime=0;
         }
+        else{
+            isPrime=1;
+        }
     }
     return isPrime;
 }

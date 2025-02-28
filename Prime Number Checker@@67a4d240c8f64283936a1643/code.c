@@ -5,8 +5,8 @@ int isPrime(int num){
     }
     for(int i=2;i*i<=num;i++){
         if(num%i==0){
-            isPrime =0;
+            isPrime=0;
         }
     }
-    return isPrime;
+    return 0;
 }

@@ -20,7 +20,7 @@ int isPrime(int num){
     if (count==2){
         return 1;
     }
-    else[
+    else{
         return 0;
-    ]
+    }    
 }

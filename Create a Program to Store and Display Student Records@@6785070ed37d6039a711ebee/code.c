@@ -10,11 +10,10 @@ int main() {
     struct Student students[100]; 
     int n, i;
 
-    printf("Enter the number of students in the class: ");
     scanf("%d", &n);
 
     for (i = 0; i < n; i++) {
-        printf("\nEnter information for student %d:\n", i + 1);
+        printf("%d:\n", i + 1);
         
         printf("Name: ");
         scanf(" %[^\n]", students[i].name);

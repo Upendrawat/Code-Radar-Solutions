@@ -27,10 +27,10 @@ int main() {
 
     printf("\nStudent Information:\n");
     for (i = 0; i < n; i++) {
-        printf("\nStudent %d:\n", i + 1);
-        printf("Name: %s\n", students[i].name);
-        printf("Roll No.: %d\n", students[i].roll);
-        printf("Marks: %.2f\n", students[i].marks);
+        printf("\nStudent %d:", i + 1);
+        printf("Name: %s", students[i].name);
+        printf("Roll No.: %d", students[i].roll);
+        printf("Marks: %.2f", students[i].marks);
     }
     return 0;
 }

@@ -6,9 +6,9 @@ int main(){
         char name[50];
         float marks;
     };
-    struct student stud[1000];
     int n, roll, i;
     scanf("%d", &n);
+    struct student stud[n];
     for ( i=0; i<n; i++){
         scanf("%d", &stud[i].rollno);
         scanf("%s", stud[i].name);

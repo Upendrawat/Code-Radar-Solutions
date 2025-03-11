@@ -16,7 +16,7 @@ int main(){
     }
     scanf("%d", &roll);
     if(roll==rollno){
-        printf("%d", &stud[i].rollno, stud[i].name, &stud[i].marks);
+        printf("%d %d %d", &stud[i].rollno, stud[i].name, &stud[i].marks);
     }
     else{
         printf("Student not found");

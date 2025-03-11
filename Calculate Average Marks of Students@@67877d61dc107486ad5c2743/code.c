@@ -12,9 +12,9 @@ float count=0;
 scanf("%d",&n);
 for(int i=0;i<n;i++){
     scanf("%d",&stud[i].rollno);
-    scanf("%s",&stud[i].name);
+    scanf("%s",stud[i].name);
     scanf("%f",&stud[i].marks);
-    result = count + marks;
+    count +=  stud[i].marks;
 }
     printf("%f", result/n);
 return 0;

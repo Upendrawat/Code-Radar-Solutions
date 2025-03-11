@@ -19,5 +19,8 @@ int main(){
         if(roll == stud[i].rollno){
             printf("Roll Number: %d, Name: %s, Marks: %.2f", stud[i].rollno, stud[i].name, stud[i].marks);
         }
+        else{
+            printf("Student not found");
+        }
     }
 }

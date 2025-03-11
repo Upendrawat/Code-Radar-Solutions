@@ -14,7 +14,7 @@ for(int i=0;i<n;i++){
     scanf("%d",&stud[i].rollno);
     scanf("%s",&stud[i].name);
     scanf("%f",&stud[i].marks);
-    printf("%d", (count+marks)/n);
 }
+    printf("%d", (count+marks)/n);
 return 0;
 }

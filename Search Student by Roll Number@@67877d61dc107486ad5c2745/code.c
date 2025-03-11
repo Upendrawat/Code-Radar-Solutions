@@ -5,7 +5,7 @@ int main(){
         int rollno;
         char name[50];
         float marks;
-    }
+    };
     struct student stud[1000];
     int n, roll;
     scanf("%d", &n);

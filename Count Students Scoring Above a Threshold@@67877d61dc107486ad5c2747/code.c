@@ -7,6 +7,7 @@ int main(){
         float marks;
     };
     int n;
+    int count = 0;
     float thres;
     scanf("%d", &n);
     struct student stud[n];
@@ -17,8 +18,9 @@ int main(){
     }
     scanf("%f", &thres);
     for (int i=0; i<n;i++){
-        if(thres<marks){
-            printf("Count of students scoring above %d: %d",thres, marks);
+        if(thres<stud[i].marks){
+            count++;
         }
     }
+    printf("Count of students scoring above %f: %d ", thres, count);
 }

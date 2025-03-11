@@ -15,7 +15,7 @@ int main(){
         scanf("%f", &stud[i].marks);
     }
     scanf("%d", &roll);
-    if(roll == stud[i].rollno){
+    if(roll == stud[n].rollno){
         printf("%d %s %f", &stud[i].rollno, stud[i].name, &stud[i].marks);
     }
     else{

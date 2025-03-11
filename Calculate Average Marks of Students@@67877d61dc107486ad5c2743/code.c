@@ -16,6 +16,6 @@ for(int i=0;i<n;i++){
     scanf("%f",&stud[i].marks);
     count +=  stud[i].marks;
 }
-    printf("%f", result/n);
+    printf("%f", count/n);
 return 0;
 }

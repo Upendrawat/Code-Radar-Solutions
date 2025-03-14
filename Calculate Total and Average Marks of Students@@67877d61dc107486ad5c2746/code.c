@@ -14,10 +14,10 @@ int main(){
         scanf("%d", &stud[i].rollno);
         scanf("%s", stud[i].name);
         scanf("%f", &stud[i].marks);
-        count += &stud[i].marks;
+        count += stud[i].marks;
     }
     for(int i=0;i<n;i++){
         printf("Total Marks: %d\n", count);
-        printf("Average Marks: %f", count/n);
+        printf("Average Marks: %f\n", count/n);
     }
 }    

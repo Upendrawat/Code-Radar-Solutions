@@ -4,13 +4,8 @@ int main() {
     int num1, num2;
     char op;
 
-    // Taking input
-    if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
-        printf("Error: Invalid input\n");
-        return 1;
-    }
+    scanf("%d %d %c", &num1, &num2, &op);
 
-    // Performing the operation
     switch (op) {
         case '+':
             printf("%d\n", num1 + num2);

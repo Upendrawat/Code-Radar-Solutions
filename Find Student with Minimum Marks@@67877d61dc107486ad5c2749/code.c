@@ -21,5 +21,5 @@ int main(){
         }
         
     }
-    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",students[a].rollNumber,students[a].name,students[a].marks);
+    printf("TStudent with Minimun Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",students[a].rollNumber,students[a].name,students[a].marks);
 }

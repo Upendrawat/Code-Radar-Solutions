@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+struct student{
+    int rollNumber;
+    char name[50];
+    float marks;
+};
+
 int main(){
     int n;
     scanf("%d", &n);

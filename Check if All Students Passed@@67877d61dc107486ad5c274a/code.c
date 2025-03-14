@@ -21,6 +21,7 @@ int main(){
         if(thres<stud[i].marks){
             count++;
             printf("All Passed");
+            return 0;
         }
         else{
             printf("Not All Passed");

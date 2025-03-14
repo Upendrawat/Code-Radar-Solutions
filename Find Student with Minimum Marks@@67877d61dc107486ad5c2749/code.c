@@ -9,7 +9,7 @@ int main(){
     int n;
     scanf("%d",&n);
     struct student students[n];
-    int min=0;
+    float min=0;
     int a=0;
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
@@ -17,7 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(min>students[i].marks){
             min=students[i].marks;
-            
+            a =i;
         }
         
     }

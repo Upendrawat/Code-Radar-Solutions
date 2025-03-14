@@ -18,6 +18,6 @@ int main(){
     }
     for(int i=0;i<n;i++){
         printf("Total Marks: %d", );
-        printf("Average Marks: %d");
+        printf("Average Marks: %d", count);
     }
 }    

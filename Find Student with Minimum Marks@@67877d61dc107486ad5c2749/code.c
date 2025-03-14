@@ -15,9 +15,8 @@ int main(){
         scanf("%d %s %f",&students[i].rollNumber,&students[i].name,&students[i].marks);
     }
     for(int i=0;i<n;i++){
-        if(students[i].marks>min){
+        if(min>students[i].marks){
             min=students[i].marks;
-            a=i;
             
         }
         

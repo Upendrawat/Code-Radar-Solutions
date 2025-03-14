@@ -17,7 +17,7 @@ int main(){
         count += stud[i].marks;
     }
     for(int i=0;i<n;i++){
-        printf("Total Marks: " );
-        printf("Average Marks: %d", count);
+        printf("Total Marks: %d\n", count);
+        printf("Average Marks: %d", count/n);
     }
 }    

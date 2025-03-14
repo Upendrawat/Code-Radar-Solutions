@@ -7,7 +7,7 @@ int main(){
     scanf("%d", &N);
     struct Rectangle stud[N];
     for (int i=0; i<N; i++){
-        scanf("%d %d", &length, &breadth);
+        scanf("%d %d", &stud[i].length, &stud[i].breadth);
     }
     for(int i=0; i<=N;i++){
         float Area, Perimeter;

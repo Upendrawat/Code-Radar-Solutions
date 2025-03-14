@@ -26,5 +26,4 @@ int main(){
             printf("Not All Passed");
         }
     }
-    printf("Count of students scoring above %.2f: %d ", thres, count);
 }

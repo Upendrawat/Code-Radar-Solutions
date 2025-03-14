@@ -5,5 +5,5 @@ int main(){
     char oper;
     scanf("%d %d %c", &num1, &num2, &oper);
     int value = num1, num2, oper;
-    printf("%d %d %c", value);
+    printf("%d", value);
 }

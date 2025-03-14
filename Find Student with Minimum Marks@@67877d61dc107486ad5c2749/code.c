@@ -11,7 +11,7 @@ int main(){
     scanf("%d", &n);
     struct student students[n];
     for (int i =0; i<n;i++){
-        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
+        scanf("%d %s %.2f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
     float min = students[0].marks;
     int a = 0;

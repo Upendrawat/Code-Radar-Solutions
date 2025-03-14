@@ -5,7 +5,6 @@ int main() {
     char op;
 
     // Taking input
-    printf("Enter two integers followed by an operator (+, -, *, /): ");
     if (scanf("%d %d %c", &num1, &num2, &op) != 3) {
         printf("Error: Invalid input\n");
         return 1;

@@ -18,8 +18,7 @@ int main(){
         if(min>students[i].marks){
             min=students[i].marks;
             a = i;
-        }
-        
+        }   
     }
     printf("Student with Minimun Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",students[a].rollNumber,students[a].name,students[a].marks);
 }

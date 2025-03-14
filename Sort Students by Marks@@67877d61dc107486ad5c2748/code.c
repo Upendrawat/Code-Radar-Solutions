@@ -30,7 +30,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &students[i].rollNumber);
-        scanf(" %[^\n]", students[i].name); 
+        scanf(" %s", students[i].name); 
         scanf("%f", &students[i].marks);
     }
 

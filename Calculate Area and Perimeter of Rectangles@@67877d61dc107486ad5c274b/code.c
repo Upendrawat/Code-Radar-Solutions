@@ -3,9 +3,9 @@ int main(){
         int length;
         int breadth;
     };
-    int n;
+    int N;
     float Area, Perimeter;
-    scanf("%d", &n);
+    scanf("%d", &N);
     struct Rectangle stud[n];
     for (int i=0; i<n; i++){
         scanf("%d %d", &length, &breadth);

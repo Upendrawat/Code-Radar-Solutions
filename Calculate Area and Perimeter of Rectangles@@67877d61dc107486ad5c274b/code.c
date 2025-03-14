@@ -12,7 +12,7 @@ int main(){
         scanf("%d %d", &stud[i].length, &stud[i].breadth);
     }
     for(int i=0; i<N;i++){
-        float Area = stud[i].length*stud[i].breadth;
+        float Area = stud[i].length * stud[i].breadth;
         float Perimeter = 2*(stud[i].length+stud[i].breadth);
         printf("Rectangle %d: Area = %.2f, Perimeter: %.2f\n", i+1, Area, Perimeter );
     }

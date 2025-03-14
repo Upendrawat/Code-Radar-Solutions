@@ -17,5 +17,5 @@ int main(){
         count += stud[i].marks;
     }
         printf("Total Marks: %d\n", count);
-        printf("Average Marks: %f\n", count/n);
+        printf("Average Marks: %.2f\n", count/n);
 }    

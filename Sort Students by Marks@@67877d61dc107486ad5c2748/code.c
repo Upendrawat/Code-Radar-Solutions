@@ -26,7 +26,7 @@ void sortStudents(struct Student students[], int n) {
 int main() {
     int n;
     scanf("%d", &n);
-    struct Student students[n];
+    struct Student students[n]{
 
         scanf("%d", &students[i].rollNumber);
         scanf(" %[^\n]", students[i].name); 

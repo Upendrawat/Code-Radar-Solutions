@@ -2,7 +2,6 @@
 
 #define MAX_STUDENTS 100
 
-// Structure to hold student details
 struct Student {
     int rollNumber;
     char name[50];
@@ -10,7 +9,6 @@ struct Student {
     char grade;
 };
 
-// Function to determine the grade based on marks
 char getGrade(int marks) {
     if (marks >= 85)
         return 'A';

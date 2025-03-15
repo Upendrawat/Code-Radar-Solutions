@@ -13,21 +13,21 @@ int main() {
     int N;
     scanf("%d", &N); 
 
-    struct Employee employees[MAX_EMPLOYEES];
+    struct Employee employes[MAX_EMPLOYEES];
 
     for (int i = 0; i < N; i++) {
-        scanf("%d %s %d", &employees[i].empID, employees[i].name, &employees[i].salary);
+        scanf("%d %s %d", &employes[i].empID, employes[i].name, &employes[i].salary);
 
-        if (employees[i].salary < 50000) {
-            employees[i].bonus = employees[i].salary * 0.10; 
+        if (employes[i].salary < 50000) {
+            employes[i].bonus = employes[i].salary * 0.10; 
         } else {
-            employees[i].bonus = employees[i].salary * 0.05; 
+            employes[i].bonus = employes[i].salary * 0.05; 
         }
     }
 
     for (int i = 0; i < N; i++) {
         printf("Employee ID: %d, Name: %s, Bonus: %.2f\n", 
-               employees[i].empID, employees[i].name, employees[i].bonus);
+               employes[i].empID, employes[i].name, employes[i].bonus);
     }
     return 0;
 }

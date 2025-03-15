@@ -16,7 +16,7 @@ int main() {
     struct Subscription users[MAX_USERS];
 
     int Count1 = 0, Count2 = 0, Count3 = 0;
-    int Revenue1 = 0, Revenue2 = 0, Revenue3 = 0;
+    float Revenue1 = 0, Revenue2 = 0, Revenue3 = 0;
 
     for (int i = 0; i < N; i++) {
         scanf("%s %s %d", users[i].userName, users[i].subType, &users[i].cost);

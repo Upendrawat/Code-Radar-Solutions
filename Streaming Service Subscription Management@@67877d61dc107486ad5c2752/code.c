@@ -33,7 +33,7 @@ int main() {
         }
     }
 
-    printf("Basic: %d Users, Revenue: %d; Standard: %d Users, Revenue: %d; Premium: %d Users, Revenue: %d\n",
+    printf("Basic: %d Users, Revenue: %.2f; Standard: %d Users, Revenue: %.2f; Premium: %d Users, Revenue: %.2f\n",
            Count1, Revenue1, Count2, Revenue2, Count3, Revenue3);
 
     return 0;

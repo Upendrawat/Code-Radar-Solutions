@@ -29,7 +29,7 @@ int main() {
     }
 
     for (int i = 0; i < N; i++) {
-        printf("Roll Number: %d, Name: %s, Grade: %d\n", 
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", 
                students[i].rollNumber, students[i].name, students[i].grade);
     }
 

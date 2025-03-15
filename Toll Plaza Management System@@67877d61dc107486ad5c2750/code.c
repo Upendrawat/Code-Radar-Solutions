@@ -15,7 +15,7 @@ int main() {
 
     struct Vehicle vehicles[MAX_VEHICLES];
 
-    int carsToll = 0, trucksToll = 0, bikesToll = 0;
+    float carsToll = 0, trucksToll = 0, bikesToll = 0;
 
     for (int i = 0; i < N; i++) {
         scanf("%s %s %d", vehicles[i].vehicleNumber, vehicles[i].vehicleType, &vehicles[i].tollAmount);
@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    printf("Cars: %d, Trucks: %d, Bikes: %d\n", carsToll, trucksToll, bikesToll);
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n", carsToll, trucksToll, bikesToll);
 
     return 0;
 }

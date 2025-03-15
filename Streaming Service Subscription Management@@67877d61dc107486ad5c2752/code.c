@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_USERdS 100
+#define MAX_USERS 100
 
 struct Subscription {
     char userName[50];

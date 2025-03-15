@@ -14,7 +14,7 @@ int main() {
     scanf("%d", &N);
     struct MovieTicket tickets[MAX_TICKETS];
 
-    int standardRevenue = 0, premiumRevenue = 0, vipRevenue = 0;
+    float standardRevenue = 0, premiumRevenue = 0, vipRevenue = 0;
 
     for (int i = 0; i < N; i++) {
         scanf("%s %s %d", tickets[i].movieName, tickets[i].ticketType, &tickets[i].price);
@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    printf("Standard: %d, Premium: %d, VIP: %d\n", standardRevenue, premiumRevenue, vipRevenue);
+    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f\n", standardRevenue, premiumRevenue, vipRevenue);
 
     return 0;
 }

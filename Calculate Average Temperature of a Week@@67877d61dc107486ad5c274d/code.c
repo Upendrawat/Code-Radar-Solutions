@@ -18,7 +18,7 @@ int main() {
 
     float averageTemperature = totalTemperature / DAYS_IN_WEEK;
 
-    printf("%.2f\n", averageTemperature);
+    printf("Average Temperature: %.2f\n", averageTemperature);
 
     return 0;
 }

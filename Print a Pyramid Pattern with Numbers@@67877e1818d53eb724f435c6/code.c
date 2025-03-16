@@ -4,11 +4,11 @@ int main() {
     int N;
     scanf("%d", &N);
 
-    for (char i = 'A'; i < 'A'+N; i++) {
-        for (char j = 'A'; j <= N - i; j++) {
+    for (char i = 1; i <= N; i++) {
+        for (int j = 1; j <= N - i; j++) {
             printf(" ");
         }
-        for (char j = 'A'; j <= i; j++) {
+        for (char j = 'A'; j <= 'A'+i; j++) {
             printf("%d ", j);
         }
         printf("\n");

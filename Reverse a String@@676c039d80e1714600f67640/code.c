@@ -2,6 +2,6 @@
 
 int main(){
     char ch[50];
-    scanf("%s", &ch);
-    printf("%s", ch);
+    scanf("%c", &ch);
+    printf("%c", ch);
 }

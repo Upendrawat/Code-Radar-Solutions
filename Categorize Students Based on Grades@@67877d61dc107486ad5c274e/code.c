@@ -26,12 +26,12 @@ int main() {
     scanf("%d", &N);
 
     struct Student student[MAX_STUDENTS];
-    for (int i = 1; i <= N; i++) {
+    for (int i = 0; i <= N-1; i++) {
         scanf("%d %s %d", &student[i].rollNumber, student[i].name, &student[i].marks);
         student[i].grade = getGrade(student[i].marks);
     }
 
-    for (int i = 1; i <= N; i++) {
+    for (int i = 0; i <= N-1; i++) {
         printf("Roll Number: %d, Name: %s, Grade: %c\n", 
                student[i].rollNumber, student[i].name, student[i].grade);
     }

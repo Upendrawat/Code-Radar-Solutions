@@ -21,7 +21,7 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         if (books[i].price > rate) {
-            printf("Book above price %.2f\n", rate);
+            printf("Books above price %.2f:\n", rate);
             printf("Title: %s, Author: %s, Price: %.2f\n", books[i].title, books[i].author, books[i].price);
         }
     }

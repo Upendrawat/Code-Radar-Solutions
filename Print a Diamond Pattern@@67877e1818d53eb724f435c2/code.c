@@ -22,7 +22,7 @@ void Diamond(int n) {
     int N;
     scanf("%d", &N);
 
-    printDiamond(N);
+    Diamond(N);
 
     return 0;
     }

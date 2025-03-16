@@ -31,7 +31,7 @@ int main() {
         students[i].grade = getGrade(students[i].marks);
     }
 
-    for (int i = 0; i <= N; i++) {
+    for (int i = 0; i < N; i++) {
         printf("Roll Number: %d, Name: %s, Grade: %c\n", 
                students[i].rollNumber, students[i].name, students[i].grade);
     }

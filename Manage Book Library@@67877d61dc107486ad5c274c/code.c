@@ -16,12 +16,12 @@ int main() {
         scanf(" %s %s %f", books[i].title, books[i].author, &books[i].price);
     }
 
-    float threshold;
-    scanf("%f", &threshold);
+    float rate;
+    scanf("%f", &rate);
 
     for (int i = 0; i < N; i++) {
-        if (books[i].price > threshold) {
-            printf("Book aboce price %.2f\n", threshold);
+        if (books[i].price > rate) {
+            printf("Book above price %.2f\n", rate);
             printf("Title: %s, Author: %s, Price: %.2f\n", books[i].title, books[i].author, books[i].price);
         }
     }

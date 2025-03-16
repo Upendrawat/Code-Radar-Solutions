@@ -12,7 +12,7 @@ struct Student {
 char getGrade(int marks) {
     if (marks >= 85)
         return 'A';
-    else if (marks >= 70)
+    else if (marks >= 70 && marks<85)
         return 'B';
     else
         return 'C';

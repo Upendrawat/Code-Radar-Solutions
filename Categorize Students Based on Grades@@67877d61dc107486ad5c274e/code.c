@@ -27,7 +27,7 @@ int main() {
 
     struct Student students[MAX_STUDENTS];
     for (int i = 0; i < N; i++) {
-        scanf("%d %s %d", &students[i].rollNumber, students[i].name, &students[i].marks);
+        scanf("%d %s %d", &student[i].rollNumber, student[i].name, &student[i].marks);
         students[i].grade = getGrade(students[i].marks);
     }
 

@@ -18,4 +18,3 @@ int main() {
     printf("%d\n", countVowels(str));
     return 0;
 }
-Explanat

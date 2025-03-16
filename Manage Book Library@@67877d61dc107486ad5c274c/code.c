@@ -13,7 +13,7 @@ int main() {
     struct Book books[N];
 
     for (int i = 0; i < N; i++) {
-        scanf(" %99s %99s %f", books[i].title, books[i].author, &books[i].price);
+        scanf(" %s %s %f", books[i].title, books[i].author, &books[i].price);
     }
 
     float threshold;

@@ -20,7 +20,6 @@ void Diamond(int n) {
 
 int main() {
     int size;
-    printf("Enter an odd number for the diamond size: ");
     scanf("%d", &size);
 
     if (size % 2 == 0) {

@@ -23,7 +23,7 @@ int main() {
     scanf("%d", &size);
 
     if (size % 2 == 0) {
-        pass;
+        return;
     } 
     else {
         Diamond(size);

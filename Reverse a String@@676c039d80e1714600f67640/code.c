@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    char str[50];
-    scanf("%c", &str);
-    printf("%c", str);
+    char ch[50];
+    scanf("%c", &ch);
+    printf("%c", ch);
 }

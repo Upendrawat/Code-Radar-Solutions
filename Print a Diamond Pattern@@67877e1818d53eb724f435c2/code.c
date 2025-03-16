@@ -18,12 +18,12 @@ void Diamond(int n) {
     }
 }
 
-int main() {
-    int size;
-    scanf("%d", &size);
+    int main() {
+    int N;
+    printf("Enter the number of rows for the top half: ");
+    scanf("%d", &N);
 
-    if (size) {
-        Diamond(size);
-    } 
+    printDiamond(N);
+
     return 0;
-}
+    }

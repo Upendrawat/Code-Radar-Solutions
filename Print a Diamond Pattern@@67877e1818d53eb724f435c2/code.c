@@ -22,12 +22,8 @@ int main() {
     int size;
     scanf("%d", &size);
 
-    if (size % 2 == 0) {
-        return;
-    } 
-    else {
+    if (size) {
         Diamond(size);
-    }
-
+    } 
     return 0;
 }

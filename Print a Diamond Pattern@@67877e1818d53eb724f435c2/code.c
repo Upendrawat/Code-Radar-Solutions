@@ -20,7 +20,6 @@ void Diamond(int n) {
 
     int main() {
     int N;
-    printf("Enter the number of rows for the top half: ");
     scanf("%d", &N);
 
     printDiamond(N);

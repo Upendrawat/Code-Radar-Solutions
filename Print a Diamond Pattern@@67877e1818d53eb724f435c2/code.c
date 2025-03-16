@@ -23,7 +23,7 @@ int main() {
     scanf("%d", &size);
 
     if (size % 2 == 0) {
-        printf("Please enter an odd number.\n");
+        pass;
     } 
     else {
         Diamond(size);

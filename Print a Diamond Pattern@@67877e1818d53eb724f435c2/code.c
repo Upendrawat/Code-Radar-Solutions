@@ -1,28 +1,29 @@
 #include <stdio.h>
 
-void Diamond(int N) {
-    for (int i = 1; i <= N; i += 2) {
-        for (int j = 0; j < (N - i) / 2; j++)
+void printDiamond(int N) {
+    for (int i = 1; i <= N; i++) {
+        for (int j = 0; j < N - i; j++)
             printf(" ");
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < (2 * i - 1); j++)
             printf("*");
         printf("\n");
     }
-    
-    for (int i = N - 2; i >= 1; i -= 2) {
-        for (int j = 0; j < (N - i) / 2; j++)
+
+    for (int i = N - 1; i >= 1; i--) {
+        for (int j = 0; j < N - i; j++)
             printf(" ");
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < (2 * i - 1); j++)
             printf("*");
         printf("\n");
     }
 }
 
-    int main() {
+int main() {
     int N;
+    printf("Enter the number of rows for the top half: ");
     scanf("%d", &N);
 
-    Diamond(N);
+    printDiamond(N);
 
     return 0;
-    }
+}

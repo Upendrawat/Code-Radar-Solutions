@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int num;
     scanf("%d", &num);
-    if((num & -num)+1){
+    
+    int msb = (num >> 31) & 1;
+    
+    if (msb == 1) {
         printf("Set");
-    }
-    else{
+    } else {
         printf("Not Set");
     }
+    
     return 0;
 }

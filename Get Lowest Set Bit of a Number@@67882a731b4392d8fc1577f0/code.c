@@ -1,13 +1,27 @@
 // Your code here...
 #include <stdio.h>
-int toggleNthBit(int num, int n) {
-    return num ^ (1 << n);
+int getLowestSetBitPosition(int n) {
+    if (n == 0) {
+        return -1; 
+    }
+
+    int position = 0;
+    while ((n & 1) == 0) {
+        n >>= 1;
+        position++;
+    }
+
+    return position;
 }
+
 int main() {
-    int num, n;
+    int num;
+
     scanf("%d", &num);
-    scanf("%d", &n);
-    int updatedNum = toggleNthBit(num, n);
-    printf("%d\n", updatedNum);
+
+    int position = getLowestSetBitPosition(num);
+
+    printf("%d\n", position);
+
     return 0;
 }

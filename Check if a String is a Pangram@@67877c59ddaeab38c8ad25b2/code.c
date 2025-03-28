@@ -1,24 +1,21 @@
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 
 int main() {
-    char str[100];
-    scanf("%s", str);
-    int len = strlen(str);
-    
-    for (int i = 0; i < len; i++) {
-        int isUnique = 1;
-        for (int j = 0; j < len; j++) {
-            if (i != j && str[i] == str[j]) { 
-                isUnique = 0;
-                break;
+    char str[1000];
+    int letters[26] = {0}, count = 0;
+    scanf("%[^\n]", str); 
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (isalpha(str[i])) {
+            int index = tolower(str[i]) - 'a'; 
+            if (!letters[index]) { 
+                letters[index] = 1;
+                count++;
             }
         }
-        if (isUnique) {
-            printf("%c\n", str[i]); 
-            return 0;
-        }
     }
-    printf("-\n"); 
+    printf(count == 26 ? "Yes\n" : "No\n");
+
     return 0;
 }

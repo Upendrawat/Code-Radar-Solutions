@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to check if an array is a palindrome
 int isPalindrome(int arr[], int n) {
     int left = 0, right = n - 1;
 

@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <math.h>
 
 // Function to check if a number is prime
 int isPrime(int num) {
-    if (num < 2) return 0; // Prime numbers are greater than 1
-    for (int i = 2; i <= sqrt(num); i++) {
-        if (num % i == 0) {
-            return 0; // Not a prime
-        }
+    if (num < 2) return 0;
+    if (num == 2) return 1; // 2 is prime
+    if (num % 2 == 0) return 0; // Even numbers > 2 are not prime
+    
+    for (int i = 3; i * i <= num; i += 2) {
+        if (num % i == 0) return 0;
     }
-    return 1; // Prime number
+    return 1;
 }
 
 // Function to count prime numbers in an array

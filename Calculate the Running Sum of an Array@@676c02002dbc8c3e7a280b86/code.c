@@ -14,7 +14,6 @@ int main() {
     int n;
 
     // Input the size of the array
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     // Check if size is valid
@@ -25,17 +24,13 @@ int main() {
 
     int arr[n], result[n];
 
-    // Input array elements
-    printf("Enter %d elements of the array: ", n);
+    printf("%d", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Call the function to calculate the running sum
     calculateRunningSum(arr, n, result);
 
-    // Output the result array
-    printf("The running sum array is: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", result[i]);
     }

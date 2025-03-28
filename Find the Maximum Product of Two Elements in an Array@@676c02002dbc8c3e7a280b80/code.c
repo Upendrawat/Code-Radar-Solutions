@@ -1,20 +1,18 @@
 #include <stdio.h>
-#include <limits.h> // For INT_MIN
+#include <limits.h> 
 
 int main() {
     int n;
-    scanf("%d", &n); // Read the size of the array
+    scanf("%d", &n); 
 
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]); // Read array elements
     }
 
-    // Initialize the two largest and two smallest numbers
     int max1 = INT_MIN, max2 = INT_MIN;
     int min1 = INT_MAX, min2 = INT_MAX;
 
-    // Find the two largest and two smallest numbers
     for (int i = 0; i < n; i++) {
         if (arr[i] > max1) {
             max2 = max1;

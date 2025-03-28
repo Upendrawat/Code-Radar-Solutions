@@ -9,18 +9,16 @@ void calculateRunningSum(int arr[], int n, int result[]) {
 
 int main() {
     int n;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n], result[n];
-    printf("Enter %d elements of the array: ", n);
+    printf("%d", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     calculateRunningSum(arr, n, result);
 
-    printf("The running sum array is: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", result[i]);
     }

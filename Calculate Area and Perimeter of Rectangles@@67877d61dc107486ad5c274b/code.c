@@ -1,22 +1,19 @@
-#include <stdio.h>
-
+#include<stdio.h>
+typedef struct rectangle{
+    int length;
+    int breadth;
+}rect;
 int main(){
-    struct Rectangle{
-        int length;
-        int breadth;
-    };
-    int N;
-    scanf("%d", &N);
-    struct Rectangle rectangles[N];
-    for (int i=0; i<N; i++){
-        scanf("%d %d", &rectangles[i].length, &rectangles[i].breadth);
+    int n;
+    scanf("%d",&n);
+    rect rectangles[n];
+    for(int i=0;i<n;i++){
+        scanf("%d %d",&rectangles[i].length,&rectangles[i].breadth);
     }
-    for(int i=0; i<N;i++){
-        float Area = rectangles[i].length * rectangles[i].breadth;
-        float Perimeter = 2*(rectangles[i].length+rectangles[i].breadth);
-        printf("Rectangle %d: Area = %.2f, Perimeter: %.2f\n", i+1, Area, Perimeter );
+    for(int i=0;i<n;i++){
+        float l=rectangles[i].length;
+        float b=rectangles[i].breadth;
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n",i+1,l*b,2*(l+b));
     }
-    return 0;
+    
 }
-
-

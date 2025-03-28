@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <limits.h>
 
-#define MAX 100000 // Assuming a max range for numbers in the array
+#define MAX 100000 
 
 int main() {
     int n;
-    scanf("%d", &n); // Read size of the array
+    scanf("%d", &n); 
 
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]); // Read array elements
+        scanf("%d", &arr[i]); 
     }
 
-    int idx[MAX]; // Stores the first occurrence index
+    int idx[MAX]; 
     for (int i = 0; i < MAX; i++) {
-        idx[i] = -1; // Initialize all elements to -1
+        idx[i] = -1; 
     }
 
     int minIndex = INT_MAX; 

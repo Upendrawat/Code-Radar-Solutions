@@ -7,7 +7,7 @@ int main() {
 
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]); // Read array elements
+        scanf("%d", &arr[i]); 
     }
 
     int max1 = INT_MIN, max2 = INT_MIN;
@@ -33,7 +33,6 @@ int main() {
 
     int maxProduct = (max1 * max2 > min1 * min2) ? max1 * max2 : min1 * min2;
 
-    printf("%d\n", maxProduct); // Output the maximum product
-
+    printf("%d\n", maxProduct); 
     return 0;
 }

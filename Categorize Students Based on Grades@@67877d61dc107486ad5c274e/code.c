@@ -1,39 +1,30 @@
 #include <stdio.h>
 
-#define MAX_STUDENTS 100
-
 struct Student {
     int rollNumber;
     char name[50];
-    int marks;
-    char grade;
+    float marks;
 };
 
-char getGrade(int marks) {
-    if (marks >= 85){
-        return 'A';
-    }
-    else if (marks >= 70 && marks<85){
-        return 'B';
-    }
-    else{
-        return 'C';
-    }
+char getGrade(float marks) {
+    if (marks >= 85) return 'A';
+    else if (marks >= 70) return 'B';
+    else return 'C';
 }
 
 int main() {
-    int N;
-    scanf("%d", &N);
+    int n;
+    scanf("%d", &n); 
 
-    struct Student student[MAX_STUDENTS];
-    for (int i = 0; i < N; i++) {
-        scanf("%d %s %d", &student[i].rollNumber, student[i].name, &student[i].marks);
-        student[i].grade = getGrade(student[i].marks);
+    struct Student students[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < n; i++) {
         printf("Roll Number: %d, Name: %s, Grade: %c\n", 
-               student[i].rollNumber, student[i].name, student[i].grade);
+               students[i].rollNumber, students[i].name, getGrade(students[i].marks));
     }
 
     return 0;
